@@ -1,2 +1,2 @@
 # Smart-attandance-dashboard
-Smart attandance dashboard using Java for student attendance management
+Smart attandance dashboard using HTML , CSS ,JS for student attendance management
