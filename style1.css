@@ -1,0 +1,47 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh; padding: 20px; color: white;
+}
+.container { max-width: 1200px; margin: auto; }
+h1 { text-align: center; margin-bottom: 30px; }
+.input-section {
+    display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;
+    background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;
+}
+input {
+    flex: 1; padding: 12px; border: none; border-radius: 8px; 
+    min-width: 150px; font-size: 14px;
+}
+button {
+    padding: 12px 25px; border: none; border-radius: 8px; 
+    background: #ff6b6b; color: white; cursor: pointer; font-weight: bold;
+}
+button:hover { background: #ff5252; }
+.stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px; margin: 30px 0;
+}
+.card {
+    background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+    padding: 20px; border-radius: 15px; border-left: 5px solid;
+}
+.card.safe { border-color: #4caf50; }
+.card.danger { border-color: #f44336; }
+.card h3 { margin-bottom: 10px; }
+.percent { font-size: 2rem; font-weight: bold; }
+.bunk-info { margin-top: 10px; font-size: 0.9rem; opacity: 0.9; }
+.charts { 
+    display: grid; grid-template-columns: 1fr 1fr; gap: 30px; 
+    background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px;
+}
+#alertBox { 
+    padding: 15px; border-radius: 8px; margin-bottom: 20px; 
+    display: none; background: #f44336; 
+}
+#exportBtn { margin-top: 20px; width: 100%; }
+@media(max-width: 768px) {.charts { grid-template-columns: 1fr; } }
+
+
